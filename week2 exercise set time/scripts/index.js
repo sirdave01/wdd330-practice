@@ -130,8 +130,8 @@ pauseBtn.addEventListener('click', () => {
 
 // Resume from remaining time
 resumeBtn.addEventListener('click', () => {
-    if (isPaused && timeLeft > 0) {
-        startTimer(timeLeft);
+    if (isPaused && timeleft > 0) {
+        startTimer(timeleft);
         isPaused = false;
     }
 });
@@ -140,7 +140,7 @@ resumeBtn.addEventListener('click', () => {
 stopBtn.addEventListener('click', () => {
     if (countdown) {
         clearInterval(countdown);
-        countdownInterval = null;
+        countdown = null;
     }
     isPaused = false;
 });
@@ -149,7 +149,7 @@ stopBtn.addEventListener('click', () => {
 resetBtn.addEventListener('click', () => {
     if (countdown) clearInterval(countdown);
     countdown = null;
-    timeLeft = 0;
+    timeleft = 0;
     isPaused = false;
     timerDisplay.textContent = "00:00:00";
 });
