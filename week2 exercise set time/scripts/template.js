@@ -38,5 +38,6 @@ products.forEach((product) => {
 
 });
 
+// fast debugging log
 console.log("Template script loaded.");
 alert("Welcome to the Product Page!");
