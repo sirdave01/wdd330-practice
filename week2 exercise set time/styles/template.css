@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+
+    h2 {
+        font-size: 1.1rem;
+    }
+}
+
+#product-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 500px;
+
+    .card {
+        border: 1px solid #ccc;
+        padding: 1em;
+        margin: 1em;
+        max-width: 200px;
+        border-radius: 10px;
+        background-color: #cee;
+
+        .tn {
+            display: block;
+            margin-top: 1em;
+            max-width: 100%;
+        }
+    }
+}
