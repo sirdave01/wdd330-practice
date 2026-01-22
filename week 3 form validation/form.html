@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    
+</head>
+
+<body>
+    <h1>Form Validation</h1>
+    <main>
+        <h3>Future Value</h3>
+        <div class="gridform">
+            <label for="principle">Principle: </label>
+            <input type="text" id="principle">
+            <label for="annualrate">Annual rate: </label>
+            <input type="text" id="annualrate" placeholder=".08">
+            <label for="years">Years: </label>
+            <input type="text" id="years">
+            <label for="periods">Periods: </label>
+            <input type="text" id="periods">
+        </div>
+        <button onclick="doFV()">Compute Future Value</button>
+        <hr> Future Value: <span id="output"></span>
+    </main>
+    <footer>
+        &copy;<span id="theyear"></span> • Antonia Francesca • Utah • WDD</footer>
+</body>
+
+</html>
