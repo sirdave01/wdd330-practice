@@ -17,11 +17,14 @@
         <h3>Future Value</h3>
         <div class="gridform">
             <label for="principle">Principle: </label>
-            <input type="text" id="principle">
+            <input type="text" id="principle" required>
             <label for="annualrate">Annual rate: </label>
-            <input type="text" id="annualrate" placeholder=".08">
+            <input type="text" id="annualrate" placeholder=".08" required min=".02" max=".10">
+            <label type="annualrateVerification">Enter Annual Rate again: </label>
+            <input type="text" id="annualrateVerification" required placeholder=".08">
+            </label>
             <label for="years">Years: </label>
-            <input type="text" id="years">
+            <input type="text" id="years" required>
             <label for="periods">Periods: </label>
             <input type="text" id="periods">
         </div>
