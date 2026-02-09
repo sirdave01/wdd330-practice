@@ -1,0 +1,16 @@
+/* Style items differently based on their data-category or data-price */
+
+/* Style items with a data-category of "fruit" */
+.item[data-category="fruit"] {
+    background-color: lightcoral;
+}
+
+/* Style items with a data-category of "vegetable" */
+.item[data-category="vegetable"] {
+    background-color: lightgreen;
+}
+
+/* Style items with a data-price greater than 10 */
+.item[data-price]:not([data-price=""]):not([data-price="0"]) {
+    background-color: lightblue;
+}

@@ -1,0 +1,23 @@
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+
+    & a {
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+            color: yellow;
+        }
+    }
+
+    &p {
+        font-size: smaller;
+    }
+}
